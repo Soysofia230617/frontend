@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('/visual/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commisioner';
+    src: url('//visual/Commissioner/static/Commissioner-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #303030;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: left; /* Выравнивание текста влево */
+    width: 100%; /* Задаем ширину контейнера */
+}
+
+.container-button {
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Располагаем кнопки по вертикали */
+    align-items: center; /* Центрируем кнопки по горизонтали */
+    margin-top: 20px; /* Отступ сверху для отделения от текста */
+}
+
+.rounded-button {
+    border: none; /* Убираем рамку */
+    color:white; /* Цвет текста по умолчанию */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Позволяет задать размеры */
+    font-size: 15px; /* Размер шрифта */
+    margin: 8px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    border-radius: 25px; /* Радиус закругления */
+    border: 4px solid #303030;
+    transition: border-color 0.3s;
+    font-weight: bold;
+}
+
+#manager {
+    width: 343px;
+    height: 144px;
+    font-size: 25px;
+    padding-right: 120px;
+    padding-top: 108px;
+    background-image: url('/visual/Manager.png'); 
+    background-size: cover; 
+}
+
+
+#talent {
+    width: 343px;
+    height: 144px;
+    font-size: 25px;
+    padding-left: 240px;
+    padding-top: 108px;
+    background-image: url('/visual/Talanted.png'); /* Путь к изображению фона для таланта */
+    background-size: cover; /* Изображение будет покрывать всю кнопку */
+}
+#next{
+    width: 343px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #F9F9F9;
+    color: #303030;
+}
+.active {
+    border-color: #b4f87c; /* Цвет окантовки при активном состоянии */
+}
+.choose.selected {
+    border: 2px solid #b4f87c;
+    color: white; /* Цвет текста при выборе */
+}
+
+.green-button {
+    width: 343px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #b4f87c; 
+    color: #303030;
+}
+
+.green-button:hover {
+    background-color: #45a049; 
+}
+.green-button:disabled {
+    background-color: #ccc; /* Серый фон для неактивной кнопки */
+    color: #666; /* Цвет текста для неактивной кнопки */
+    cursor: not-allowed; /* Изменение курсора на "нельзя" */
+}
+
+h1 {
+    left: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+h2 {
+    left: 20px;
+    font-family: 'Commisioner',sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.spacer {
+    height: 50px; 
+}
